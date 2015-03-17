@@ -1,11 +1,75 @@
 fileFormatVersion: 2
-guid: 5a9c27e96abea7648a4ac0efd01f1ff0
+guid: 1bc59e55ce32adb48bee14c092ad1572
 ModelImporter:
   serializedVersion: 16
-  fileIDToRecycleName: {}
+  fileIDToRecycleName:
+    100000: head
+    100002: hip_center
+    100004: left_ankle
+    100006: left_collar
+    100008: left_elbow
+    100010: left_fingers
+    100012: left_foot
+    100014: left_hand
+    100016: left_hip
+    100018: left_knee
+    100020: left_shoulder
+    100022: left_thigh
+    100024: left_wrist
+    100026: mesh
+    100028: neck
+    100030: //RootNode
+    100032: right_ankle
+    100034: right_collar
+    100036: right_elbow
+    100038: right_fingers
+    100040: right_foot
+    100042: right_hand
+    100044: right_hip
+    100046: right_knee
+    100048: right_shoulder
+    100050: right_thigh
+    100052: right_wrist
+    100054: root_joint
+    100056: skeleton
+    100058: spine
+    400000: head
+    400002: hip_center
+    400004: left_ankle
+    400006: left_collar
+    400008: left_elbow
+    400010: left_fingers
+    400012: left_foot
+    400014: left_hand
+    400016: left_hip
+    400018: left_knee
+    400020: left_shoulder
+    400022: left_thigh
+    400024: left_wrist
+    400026: mesh
+    400028: neck
+    400030: //RootNode
+    400032: right_ankle
+    400034: right_collar
+    400036: right_elbow
+    400038: right_fingers
+    400040: right_foot
+    400042: right_hand
+    400044: right_hip
+    400046: right_knee
+    400048: right_shoulder
+    400050: right_thigh
+    400052: right_wrist
+    400054: root_joint
+    400056: skeleton
+    400058: spine
+    4300000: mesh
+    7400000: Take 001
+    11100000: //RootNode
+    13700000: mesh
   materials:
     importMaterials: 1
-    materialName: 0
+    materialName: 3
     materialSearch: 1
   animations:
     legacyGenerateAnimations: 4
@@ -54,6 +118,6 @@ ModelImporter:
     feetSpacing: 0
     rootMotionBoneName: 
   lastHumanDescriptionAvatarSource: {instanceID: 0}
-  animationType: 2
-  additionalBone: 0
+  animationType: 1
+  additionalBone: 1
   userData: 
