@@ -19,7 +19,7 @@ RenderSettings:
   m_LinearFogStart: 0
   m_LinearFogEnd: 300
   m_AmbientLight: {r: .200000003, g: .200000003, b: .200000003, a: 1}
-  m_SkyboxMaterial: {fileID: 2100000, guid: da976b1a4f7ebb949b0f71341e4f1821, type: 2}
+  m_SkyboxMaterial: {fileID: 2100000, guid: 02a2151240e13754c8f59d5ce514e0e7, type: 2}
   m_HaloStrength: .5
   m_FlareStrength: 1
   m_FlareFadeSpeed: 3
@@ -980,8 +980,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ddc65bd7da7897a4aa768e28cb52ba53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  skeletonWrapper: {fileID: 445791189}
-  podium: {fileID: 2120958637}
 --- !u!114 &445791187
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -993,8 +991,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e8c044f5d461fc84cbadaa2a1f418cec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  devOrEmu: {fileID: 445791192}
-  outputFile: Assets/Recordings/playback
 --- !u!114 &445791188
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1006,9 +1002,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd63756e6dc1ecc41b9b1155dd1692f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  devOrEmu: {fileID: 445791192}
-  storedFrames: 1
-  players: 
 --- !u!114 &445791189
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1020,26 +1013,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cbb8933f8f23b6a45b8c612cc9bbcda4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  devOrEmu: {fileID: 445791192}
-  players: 
-  trackedPlayers: 
-  flipMatrix:
-    e00: 1
-    e01: 0
-    e02: 0
-    e03: 0
-    e10: 0
-    e11: 1
-    e12: 0
-    e13: 0
-    e20: 0
-    e21: 0
-    e22: -1
-    e23: 0
-    e30: 0
-    e31: 0
-    e32: 0
-    e33: 1
 --- !u!114 &445791190
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1051,10 +1024,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1531006e9360c84f81708b2b6106d68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inputFile: Assets/Recordings/playback0
-  sensorHeight: 1
-  kinectCenter: {x: 0, y: 0, z: 2}
-  lookAt: {x: 0, y: 1, z: 0, w: 0}
 --- !u!114 &445791191
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1066,16 +1035,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1ca6d895ba931924f90d614ff752ab42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sensorHeight: 1
-  kinectCenter: {x: 0, y: 0, z: 2}
-  lookAt: {x: 0, y: 1, z: 0, w: 0}
-  smoothing: .5
-  correction: .5
-  prediction: .5
-  jitterRadius: .0500000007
-  maxDeviationRadius: .0399999991
-  enableNearMode: 1
-  skeltonTrackingMode: 8
 --- !u!114 &445791192
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1087,9 +1046,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3cc1f6a2b4778c24491a89120cd24d40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  device: {fileID: 445791191}
-  emulator: {fileID: 445791190}
-  useEmulator: 0
 --- !u!4 &445791193
 Transform:
   m_ObjectHideFlags: 0
@@ -1431,36 +1387,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 867fddf8d8f4f13439dd4facb64b9a4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sw: {fileID: 445791189}
-  Hip_Center: {fileID: 285040157}
-  Spine: {fileID: 1330254603}
-  Shoulder_Center: {fileID: 115048868}
-  Head: {fileID: 1989613771}
-  Collar_Left: {fileID: 55647370}
-  Shoulder_Left: {fileID: 279372016}
-  Elbow_Left: {fileID: 159782171}
-  Wrist_Left: {fileID: 1905710150}
-  Hand_Left: {fileID: 242597058}
-  Fingers_Left: {fileID: 1384935961}
-  Collar_Right: {fileID: 1341090370}
-  Shoulder_Right: {fileID: 2104561349}
-  Elbow_Right: {fileID: 171832682}
-  Wrist_Right: {fileID: 976763649}
-  Hand_Right: {fileID: 439956588}
-  Fingers_Right: {fileID: 1430540197}
-  Hip_Override: {fileID: 285040157}
-  Hip_Left: {fileID: 994820128}
-  Knee_Left: {fileID: 522157855}
-  Ankle_Left: {fileID: 1576449832}
-  Foot_Left: {fileID: 1803975905}
-  Hip_Right: {fileID: 975949187}
-  Knee_Right: {fileID: 1165169061}
-  Ankle_Right: {fileID: 937576936}
-  Foot_Right: {fileID: 458970246}
-  player: 0
-  Mask: 983038
-  animated: 0
-  blendWeight: 1
 --- !u!111 &890004748
 Animation:
   m_ObjectHideFlags: 0
@@ -1921,30 +1847,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 045143bf7a022a948b411ac9fe734c2a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sw: {fileID: 445791189}
-  Hip_Center: {fileID: 362133100}
-  Spine: {fileID: 2114001512}
-  Shoulder_Center: {fileID: 1522439090}
-  Head: {fileID: 438521621}
-  Shoulder_Left: {fileID: 1201339139}
-  Elbow_Left: {fileID: 1819947498}
-  Wrist_Left: {fileID: 1047059001}
-  Hand_Left: {fileID: 1788030093}
-  Shoulder_Right: {fileID: 716759636}
-  Elbow_Right: {fileID: 1672553000}
-  Wrist_Right: {fileID: 275028596}
-  Hand_Right: {fileID: 583466536}
-  Hip_Left: {fileID: 1660460032}
-  Knee_Left: {fileID: 1993764892}
-  Ankle_Left: {fileID: 1232247845}
-  Foot_Left: {fileID: 1735793623}
-  Hip_Right: {fileID: 1597014655}
-  Knee_Right: {fileID: 1364596018}
-  Ankle_Right: {fileID: 2139932337}
-  Foot_Right: {fileID: 1344897669}
-  player: 0
-  Mask: 1048575
-  scale: 1
 --- !u!1 &1330254603
 GameObject:
   m_ObjectHideFlags: 0
@@ -2893,7 +2795,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72e6a42e231ce934c9ed92eb08704b00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  devOrEmu: {fileID: 445791192}
 --- !u!23 &1772621673
 Renderer:
   m_ObjectHideFlags: 0

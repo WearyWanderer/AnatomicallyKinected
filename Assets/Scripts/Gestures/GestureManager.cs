@@ -1,27 +1,40 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class GestureManager : MonoBehaviour 
+
+/// <summary>
+/// A class used to monitor and manage every Kinect gesture recognised by the application.
+/// </summary>
+public sealed class GestureManager : MonoBehaviour
 {
-	public SkeletonWrapper skeletonWrapper;
-	public GameObject podium;
+	#region Implementation data
 
-	// Use this for initialization
-	void Start () 
+	private	Gesture m_current   = Gesture.None; //!< The currently recognised Gesture.
+	private float   m_magnitude = 0f;           //!< The magnitude of the velocity of the recognised Gesture.
+
+	#endregion
+
+
+	#region Getters, setters and properties
+
+	/// <summary>
+	/// Gets the currently recognised Gesture.
+	/// </summary>
+	/// <value> An enum representing the Gesture the user is performing. </value>
+	public Gesture currentGesture
 	{
-		
+		get { return m_current; }
 	}
-	
-	// Update is called once per frame
-	void Update () 
+
+
+	/// <summary>
+	/// Gets magnitude of the current Gesture. This can be used to manipulate the effects of the Gesture.
+	/// </summary>
+	/// <value> A positive or negative value. This could also be zero. </value>
+	public float gestureMagnitude
 	{
-		
-
-
+		get { return m_magnitude; }
 	}
 
-	//If elbow in front of hips
-
-
-
+	#endregion
 }
