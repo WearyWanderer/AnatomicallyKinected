@@ -18,4 +18,5 @@ Physics2DSettings:
   m_LinearSleepTolerance: .00999999978
   m_AngularSleepTolerance: 2
   m_RaycastsHitTriggers: 1
+  m_DeleteStopsCallbacks: 1
   m_LayerCollisionMatrix: ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff
