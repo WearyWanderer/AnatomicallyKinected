@@ -1,7 +1,7 @@
 ﻿/// <summary>
 /// A representation of every Gesture recognised by the application.
 /// </summary>
-public enum Gesture
+public enum GestureType
 {
 	None          = 0, //!< Represents nothing being detected.
 	HandSwipe     = 1, //!< A swipe of either the left or right hand.

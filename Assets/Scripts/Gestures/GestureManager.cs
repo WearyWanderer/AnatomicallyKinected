@@ -9,8 +9,8 @@ public sealed class GestureManager : MonoBehaviour
 {
 	#region Implementation data
 
-	private	Gesture m_current   = Gesture.None; //!< The currently recognised Gesture.
-	private float   m_magnitude = 0f;           //!< The magnitude of the velocity of the recognised Gesture.
+	private	GestureType m_current   = GestureType.None; //!< The currently recognised GestureType.
+	private float       m_magnitude = 0f;               //!< The magnitude of the velocity of the recognised Gesture.
 
 	#endregion
 
@@ -18,17 +18,17 @@ public sealed class GestureManager : MonoBehaviour
 	#region Getters, setters and properties
 
 	/// <summary>
-	/// Gets the currently recognised Gesture.
+	/// Gets the currently recognised GestureType.
 	/// </summary>
-	/// <value> An enum representing the Gesture the user is performing. </value>
-	public Gesture currentGesture
+	/// <value> An enum representing the GestureType the user is performing. </value>
+	public GestureType currentGesture
 	{
 		get { return m_current; }
 	}
 
 
 	/// <summary>
-	/// Gets magnitude of the current Gesture. This can be used to manipulate the effects of the Gesture.
+	/// Gets magnitude of the current GestureType. This can be used to manipulate the effects of the GestureType.
 	/// </summary>
 	/// <value> A positive or negative value. This could also be zero. </value>
 	public float gestureMagnitude
